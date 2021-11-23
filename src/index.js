@@ -25,7 +25,7 @@ export default (code)=>{
                                 body: [path.parentPath.parent]
                             }
                         }).code
-                        console.log('code',code)
+                    
                         let arr = code.match(new RegExp(`${vm}._v\(${vm}._s\((.*)\)\)`))
                         if(!arr){
                             arr = code.match(/\((.*)\)/)
